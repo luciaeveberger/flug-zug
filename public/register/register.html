@@ -1,0 +1,175 @@
+<div class="landing">
+        <div id="page-wrapper">
+            <!-- Header -->
+                <header id="header" class="alt">
+                    <h1><a href="index.html">Product Name</h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                              <!--   <a href="#" class="icon fa-angle-down"></a> -->
+                                <ul>
+                                    <li><a href="generic.html">Generic</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                    <li>
+                                        <a href="#">Submenu</a>
+                                        <ul>
+                                            <li><a href="#">Option One</a></li>
+                                            <li><a href="#">Option Two</a></li>
+                                            <li><a href="#">Option Three</a></li>
+                                            <li><a href="#">Option Four</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="button">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+            <!-- Banner -->
+                <section id="banner">
+                    <h2>Product name </h2>
+                    <p> Tag Line here</p>
+                    <ul class="actions">
+                        <li><button class="button special" ng-click="signUp()">Sign Up</button></li>
+                        <!-- <li><button class="button special">Learn More</a></li> -->
+                    </ul>
+                    <ul class="actions" ng-show="show_block">
+                     <li> 
+                          <form name="form" role="form" >
+                            <div class="form-group" ng-class="{ 'has-error': form.email_address.$dirty && form.email_address.$error.required }">
+                            <input type="email" name="email_address" id="email_address" class="form-control" ng-model="userData.email_address" placeholder="email address" required />
+                            <span ng-show="form.email_address.$dirty && form.email_address.$error.required" class="help-block"> Valid email is required</span>
+                            </div>
+                        </li>
+                        <li>
+                                <div class="form-actions">
+                                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="button special" id="green" ng-click="createUser()"> GO</button>
+                                    <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                                    
+                                </div>
+                            </form> 
+                        </li>
+                    </ul>
+                </section>
+
+            <!-- Main -->
+                <section id="main" class="container">
+
+                    <section class="box special">
+                        <header class="major">
+                            <h2> Something about your product here
+                            <br />
+                            other statement line</h2>
+                            <p>
+
+                            <a href="/#/grid"> See designs for purchase </a>
+                            </p>
+                            
+                        </header>
+                        <!-- <span class="image featured"><img src="images/background_example1.jpeg" alt="" /></span> -->
+                    </section>
+
+                    <section class="box special features">
+                        <div class="features-row">
+                            <section>
+                                <span class="icon major fa-bolt accent2" id="green"></span>
+                                <h3>Magna etiam</h3>
+                                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                            </section>
+                            <section>
+                                <span class="icon major fa-area-chart accent3"></span>
+                                <h3>Ipsum dolor</h3>
+                                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                            </section>
+                        </div>
+                        <div class="features-row">
+                            <section>
+                                <span class="icon major fa-cloud accent4"></span>
+                                <h3>Sed feugiat</h3>
+                                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                            </section>
+                            <section>
+                                <span class="icon major fa-lock accent5"></span>
+                                <h3>Enim phasellus</h3>
+                                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                            </section>
+                        </div>
+
+                    </section>
+
+                    <div class="row">
+                        <div class="6u 12u(narrower)">
+<!-- 
+                            <section class="box special">
+                                <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+                                <h3>Sed lorem adipiscing</h3>
+                                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button alt">Learn More</a></li>
+                                </ul>
+                            </section>
+
+                        </div>
+                        <div class="6u 12u(narrower)">
+
+                            <section class="box special">
+                                <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+                                <h3>Accumsan integer</h3>
+                                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button alt">Learn More</a></li>
+                                </ul>
+                            </section>
+ -->
+                        </div>
+                    </div>
+
+                </section>
+
+            <!-- CTA -->
+                <section id="cta">
+
+                    <h2>Sign up</h2>
+                    <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+
+                    <form>
+                        <div class="row uniform 50%">
+                            <div class="8u 12u(mobilep)">
+                                <input type="email" name="email" id="email" placeholder="Email Address" />
+                            </div>
+                            <div class="4u 12u(mobilep)">
+                                <input type="submit" ng-click="signUp()" value="Sign Up" class="fit" />
+                            </div>
+                        </div>
+                    </form>
+
+                </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                        <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+                    </ul>
+                    
+                </footer>
+
+        </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollgress.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+</div>
+

@@ -1,0 +1,53 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="savrApp">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title> Marketing Site </title>
+
+	<!-- SCROLLS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	
+	<!-- SPELLS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"> </script>
+
+
+	<script src="js/lib/angular-ui-router.min.js"> </script>
+	<script src="https://rawgit.com/dwmkerr/angular-modal-service/master/dst/angular-modal-service.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDzsGdQKWwZrAZjGNjTjXdxuXJQOKsertk"></script>
+
+
+	<script src="js/controllers/main.js"></script><!-- load up our controller -->
+	<script src="js/services/createUser.js"></script>
+	<!-- load our todo service -->
+	<script src="js/core.js"></script>
+	 <script src="js/map.js"> </script>
+     <style>
+         html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+         }
+         #map {
+         height: 100%;
+         }
+      </style>
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController" class="landing">
+	<!-- set up registration here --> 
+      <div id="map"></div>
+      <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDzsGdQKWwZrAZjGNjTjXdxuXJQOKsertk&callback=initMap"
+         async defer></script>
+      <script src="map.js"> </script>
+
+</body>
+</html>
